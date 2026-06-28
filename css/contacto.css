@@ -1,0 +1,108 @@
+/* Página de contacto */
+.contacto {
+    padding: 3rem 0;
+}
+
+.caja-contacto {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-left: 0.35rem solid #7a5738;
+    padding: 2rem;
+    box-shadow: 0 0.2rem 0.6rem #2f2b2426;
+    max-width: 45rem;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+}
+
+.caja-contacto p {
+    margin-bottom: 1.5rem;
+    
+}
+
+.campo-formulario {
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+}
+
+.campo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    color: #4b5238;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 0.1rem solid #d8c7a3;
+    background-color: #fdf8ee;
+    font-family: Georgia, Garamond, serif;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+.campo-formulario textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #7a5738;
+    box-shadow: 0 0 0.3rem #7a573866;
+}
+
+.boton-enviar {
+    background-color: #4b5238;
+    color: #f2eadc;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 0.4rem;
+}
+
+.boton-enviar:hover {
+    background-color: #7a5738;
+    transform: translateY(-0.2rem);
+}
+
+/* Página de confirmación */
+.confirmacion {
+    padding: 3rem 0;
+}
+
+.mensaje-confirmacion {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-left: 0.35rem solid #7a5738;
+    padding: 2rem;
+    box-shadow: 0 0.2rem 0.6rem #2f2b2426;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.mensaje-confirmacion p {
+    margin-bottom: 1rem;
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #4b5238;
+    color: #f2eadc;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: #7a5738;
+    color: #f2eadc;
+    text-decoration: none;
+    transform: translateY(-0.2rem);
+}

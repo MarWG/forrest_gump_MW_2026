@@ -1,6 +1,7 @@
 /* Portada de inicio */
 .portada {
     padding: 3rem 0;
+    
 }
 
 .portada-contenido {
@@ -8,6 +9,7 @@
     grid-template-columns: 1fr 1.4fr;
     gap: 2rem;
     align-items: center;
+    border-radius: 0.4rem;
 }
 
 .portada-imagen {
@@ -16,12 +18,14 @@
     box-shadow: 0 0.3rem 0.8rem #2f2b2440;
     max-width: 34rem;
     justify-self: center;
+    border-radius: 0.4rem;
 }
 
 .portada-texto {
     background-color: rgba(255, 255, 255, 0.35);
     padding: 1.5rem;
     border-left: 0.4rem solid #7a5738;
+    border-radius: 0.4rem;
 }
 
 .portada-imagen figcaption {
@@ -45,6 +49,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    
 }
 
 .tarjetas article {
@@ -53,6 +58,7 @@
     border-top: 0.35rem solid #7a5738;
     box-shadow: 0 0.2rem 0.6rem #2f2b2426;
     transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 0.4rem;
 }
 
 .tarjetas article:hover { /*si, ya se, es el efecto de hover más básico que hay, pero quedó lindo */
@@ -90,6 +96,7 @@
     .portada-imagen {
         order: 1;
         max-width: 28rem;
+        border-radius: 0.4rem;
     }
 
     .tarjetas {

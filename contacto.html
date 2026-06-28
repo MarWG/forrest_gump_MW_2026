@@ -1,55 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto    </title>
+    <title>Contacto - Forrest Gump</title>
     <link rel="icon" href="media/imagenes/favicon.png">
-            <link rel="stylesheet" href="css/styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
+
 <body>
-<!-- contacto.html -->
-<main>
-    <section>
-        <h2>Contacto</h2>
+    <header>
+        <div class="header-contenedor">
+            <a href="index.html" class="nombre">Forrest Gump</a>
 
-        <article>
-            <h3>Comentarios y Consultas</h3>
-            <p>¿Tenés comentarios sobre la película? Nos encantaría conocer tu opinión.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton">☰</label>
 
-            <form action="confirmacion.html" method="get">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required autocomplete="off">
-                </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pelicula.html">Película</a></li>
+                    <li><a href="reparto.html">Reparto</a></li>
+                    <li><a href="produccion.html">Producción</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--same old same old-->
 
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required autocomplete="off">
-                </div>
+    <main>
+        <section class="contacto">
+            <div class="contenedor">
+                <article class="caja-contacto">
+                    <h1 class="tituloPrincipal">Contacto</h1>
 
-                <div>
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" required placeholder="nombre@email.com">
-                </div>
+                    <h2 class="tituloSeccion">Comentarios y consultas</h2>
 
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                </div>
+                    <p class="texto-largo">
+                        ¿Tenés comentarios sobre la película o sobre el sitio? Dejá tu mensaje usando el formulario.
+                    </p>
 
-                <input type="submit" value="Enviar mensaje">
-            </form>
-        </article>
-    </section>
-</main>
+                    <form action="confirmacion.html" method="get">
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required autocomplete="off">
+                        </div>
 
+                        <div class="campo-formulario">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" required autocomplete="off">
+                        </div>
 
+                        <div class="campo-formulario">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" required placeholder="nombre@email.com">
+                        </div>
 
+                        <div class="campo-formulario">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
 
+                        <input type="submit" value="Enviar mensaje" class="boton-enviar">
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
 
-
-
+    <footer>
+        <div class="contenedor">
+            <p>Forrest Gump - Mariano Williams - Parcial 2 Programación Web 1.</p>
+            <p>"La vida es como una caja de bombones, nunca sabes lo que te va a tocar"</p>
+        </div>
+    </footer>
 </body>
 </html>
