@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ooops =F </title>
+    <title>Ooops =F</title>
     <link rel="icon" type="image/png" href="media/imagenes/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
+
 <body>
-    <!-- error.html -->
-<main>
-    <section>
-        <h2> Esto no está bien Bubba... </h2>
+    <header>
+        <div class="header-contenedor">
+            <a href="index.html" class="nombre">Forrest Gump</a>
 
-        <article>
-            <p>Algunos bombones de la caja pueden no gustarte, esta página no le gusta a nadie, pero, al igual que el bombón que no te gusta, tiene su razón de ser.</p>
-            <p>Tranqui, haciendo click aca abajo, podés fácilmente volver al inicio.</p>
-            <a href="index.html">Volver al inicio</a>
-        </article>
-    </section>
-</main>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton">☰</label>
 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pelicula.html">Película</a></li>
+                    <li><a href="reparto.html">Reparto</a></li>
+                    <li><a href="produccion.html">Producción</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pagina-interna">
+            <div class="contenedor">
+                <article class="bloque-pagina error-pagina">
+                    <h1 class="tituloPrincipal">Esto no está bien, Bubba...</h1>
+                        <figure class="imagen-error">
+                            <img src="media/imagenes/BUBBA.jpeg" alt="Bubba mirando confundido">
+                        <figcaption><em>Bubba tampoco entiende por qué.</em></figcaption>
+                        <br>
+                    </figure>
+                    <p class="texto-largo">
+                        Algunos bombones de la caja pueden no gustarte. Esta página no le gusta a nadie,
+                        pero, al igual que el bombón que no te gusta, tiene su razón de ser.
+                        <br>Tranqui, haciendo click acá abajo, podés volver fácilmente al inicio.
+                    </p>
+                   
+
+                    <a href="index.html" class="boton-pagina">Volver al inicio</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Forrest Gump - Mariano Williams - Parcial 2 Programación Web 1.</p>
+            <p>"La vida es como una caja de bombones, nunca sabes lo que te va a tocar"</p>
+        </div>
+    </footer>
 </body>
 </html>

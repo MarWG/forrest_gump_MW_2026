@@ -43,3 +43,44 @@
     font-style: italic;
     margin-top: 0.5rem;
 }
+
+/* Página de error */
+.error-pagina {
+    max-width: 45rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.boton-pagina {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #4b5238;
+    color: #f2eadc;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-pagina:hover {
+    background-color: #7a5738;
+    color: #f2eadc;
+    text-decoration: none;
+    transform: translateY(-0.2rem);
+}
+
+.imagen-error {
+    max-width: 18rem;
+    margin: 1.5rem auto;
+}
+
+.imagen-error img {
+    border-radius: 0.4rem;
+    box-shadow: 0 0.3rem 0.8rem #2f2b2440;
+}
+
+.imagen-error figcaption {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
