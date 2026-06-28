@@ -1,23 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparto</title>
+    <title>Reparto - Forrest Gump</title>
     <link rel="icon" href="media/imagenes/favicon.png">
 
-    
-</head>
-<body>
-    <!-- reparto.html -->
-<main>
-    <section>
-        <h2>Reparto Principal</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800&display=swap" rel="stylesheet">
 
-        <!-- Acá se mueve TODO el contenido que hoy está en:
-        <section id="reparto"> ... </section>
-        -->
-    </section>
-</main>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-contenedor">
+            <a href="index.html" class="nombre">Forrest Gump</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton">☰</label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pelicula.html">Película</a></li>
+                    <li><a href="reparto.html">Reparto</a></li>
+                    <li><a href="produccion.html">Producción</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pagina-interna">
+            <div class="contenedor">
+                <h1 class="tituloPrincipal">Reparto principal</h1>
+
+                <article class="bloque-pagina">
+                   <h2 class="tituloSeccion">
+                     <a href="https://es.wikipedia.org/wiki/Tom_Hanks" target="_blank"> 
+                        Tom Hanks </a> como Forrest Gump
+                        <!-- tuve que googlear como abrirlo en una nueva pestaña porque me re molestaba que lo abra en la misma ventana... 
+                        IMO deberia ser castigable de manera legal que un enlace se te abra en la misma pagina siempre que sea a otro sitio xD --> 
+                    </h2>
+                    <p class="texto-largo textoJustificado">
+                        Tom Hanks interpreta a Forrest, el protagonista de la historia. Su personaje se caracteriza
+                        por su sinceridad, su forma simple de ver el mundo y su capacidad de atravesar situaciones
+                        importantes sin perder su manera de ser.
+                    </p>
+                </article>
+
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">
+                    <a href="https://es.wikipedia.org/wiki/Robin_Wright" target="_blank">
+                    Robin Wright
+                    </a> como <em>Jenny</em> <!--si, ya sabes por qué está en italics esto, y si no lo leiste como corresponde en tu mente, mal ahi, toca rewatch de Forres Gump-->
+                    </h2>
+                    <p class="texto-largo textoJustificado">
+                        Jenny es una de las personas más importantes en la vida de Forrest. Su historia muestra un
+                        recorrido mucho más conflictivo, marcado por búsquedas personales, decisiones difíciles y una
+                        relación constante pero compleja con el protagonista.
+                    </p>
+                </article>
+
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">
+                    <a href="https://es.wikipedia.org/wiki/Gary_Sinise" target="_blank">
+                    Gary Sinise
+                    </a> como el teniente Dan
+                    </h2>
+                    <p class="texto-largo textoJustificado">
+                        El teniente Dan aparece primero como superior de Forrest durante la guerra. A lo largo de la
+                        película, su personaje atraviesa una transformación importante, especialmente en su manera de
+                        entender la vida después del conflicto bélico.
+                    </p>
+                </article>
+
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">
+                    <a href="https://es.wikipedia.org/wiki/Mykelti_Williamson" target="_blank">
+                    Mykelti Williamson
+                    </a> como Bubba
+                    </h2>
+                    <p class="texto-largo textoJustificado">
+                        Bubba es uno de los grandes amigos de Forrest. Su vínculo nace durante el servicio militar y
+                        está muy relacionado con el sueño de crear un negocio de camarones, idea que luego tendrá un
+                        peso importante en la vida del protagonista.
+                    </p>
+                </article>
+
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">
+                    <a href="https://es.wikipedia.org/wiki/Sally_Field" target="_blank">
+                    Sally Field
+                    </a> como la madre de Forrest
+                    </h2>
+                    <p class="texto-largo textoJustificado">
+                        La madre de Forrest cumple un papel fundamental en su formación. A través de sus consejos y
+                        de su manera de protegerlo, le transmite muchas de las frases y valores que acompañan al
+                        personaje durante toda la película.
+                    </p>
+
+                    <!-- 2 aclaraciones en esta pagina: 
+                     1>> todos los textos de descripción de cada personaje son 100% chatgpt, si me pongo yo a escribir cada una, por un lado tardaria un par de horas, y por otro lado serían tarjetas LARGUISIMAS, porque meteria mis opiniones y bla bla.
+                     ya te mencioné que es mi película favorita? bueno, eso... 
+                     2>> para el final los voy a hacer en GRID tambien y cada uno va a tener la foto de la cara del actor, pero ahora no me dio el tiempo, no es por vagancia. O si...
+                     -->
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Forrest Gump - Mariano Williams - Parcial 2 Programación Web 1.</p>
+            <p>"La vida es como una caja de bombones, nunca sabes lo que te va a tocar"</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,98 @@
+/* Portada de inicio */
+.portada {
+    padding: 3rem 0;
+}
+
+.portada-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.portada-imagen {
+    background-color: #d8c7a3;
+    padding: 0.8rem;
+    box-shadow: 0 0.3rem 0.8rem #2f2b2440;
+    max-width: 34rem;
+    justify-self: center;
+}
+
+.portada-texto {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 1.5rem;
+    border-left: 0.4rem solid #7a5738;
+}
+
+.portada-imagen figcaption {
+    text-align: right;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    
+}
+/* secciones en modo tarjetas. EEEEEEE, mirá como uso la GRID PAPAAAA. jajaja Para algo al menos, no me da para hacer asi el resto del sitio. Pero me gustó dividir asi las cosas cuando vimos el tema en diseño y como nos enseñaste a usar GRID queria usarlo para algo */
+.accesos {
+    padding: 2rem 0 3rem;
+}
+
+.accesos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.tarjetas article {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 1.4rem;
+    border-top: 0.35rem solid #7a5738;
+    box-shadow: 0 0.2rem 0.6rem #2f2b2426;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjetas article:hover { /*si, ya se, es el efecto de hover más básico que hay, pero quedó lindo */
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.4rem 0.9rem #2f2b2440;
+}
+
+.tarjetas h3 {
+    color: #4b5238;
+    margin-bottom: 0.7rem;
+}
+
+.tarjetas p {
+    margin-bottom: 1rem;
+}
+
+.tarjetas a {
+    font-weight: bold;
+}
+
+/* Responsive del home, Y LISTO, el resto va sin, desde ya aviso y el que avisa no traiciona :P */
+@media screen and (max-width: 48rem) {
+    .portada {
+        padding: 2rem 0;
+    }
+
+    .portada-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .portada-texto {
+        order: 2;
+    }
+
+    .portada-imagen {
+        order: 1;
+        max-width: 28rem;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}

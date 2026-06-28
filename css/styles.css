@@ -1,148 +1,174 @@
-/* Reset básico */
+    /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
+    /* Estilo general de letra y color */
 body {
-    font-family: Garamond, "Times New Roman", serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
+    font-family: "Bodoni Moda";
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2f2b24;
+    background-color: #f5ead6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1; /*esto lo resolvi con ayuda de chat, te soy sincero, el footer me quedaba levantado y no entendia por que, entonces encontre que poner "min-height 100vh y flex:1 lo resolvia. probablemente fue una clase que no estuve o no estaba al 100%. Perdon*/
 }
 
-/* Header */
-header {
-    background-color: #2c3e50;
-    color: white;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    /* Imágenes flexibles */
+img {
+    max-width: 100%; /* wacho, arreglate al container , a modificar despues en partes espeficicas */
+    height: auto; /*que mantenga las proporciones que trae, no me importa manejar tan fino el alto por ahora, ya me va a doler cuando haya que hacerlo responsive */
 }
-
-.header-contenedor {
-    width: min(90%, 75rem);
-    margin: auto;
-    padding: 1rem 0;
-}
-
-.logo {
-    display: block;
-    color: #ecf0f1;
-    text-align: center;
+    /* Enlaces  */
+a {
+    color: #7a5738;
     text-decoration: none;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: bold;
+}
+a:hover {
+    color: #c65a4a;
+    text-decoration: underline;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.texto-largo {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.textoJustificado {
+    text-align: justify;
+}
+.tituloPrincipal {
+    font-size: 2.6rem;
+    color: #4b5238;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.tituloSeccion {
+    font-size: 1.8rem;
+    color: #4b5238;
     margin-bottom: 1rem;
 }
 
-/* Navegación */
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #2c3e50;
+   /* Header */
+header {
+    background-color: #4b5238;
+    color: #f2eadc;
+    box-shadow: 0 0.2rem 0.5rem rgba(47, 43, 36, 0.25);
+}
+.header-contenedor {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+}
+.nombre {
+    display: block;
+    color: #f2eadc;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    margin-bottom: 1rem;
+}
+.nombre:hover {
+    color: #d8c7a3;
+    text-decoration: none;
+}
+/*  menú hamburguesa " fantasma " */
+.menu-toggle {
+    display: none;
 }
 
+/* Botón hamburguesa escondido*/
+.menu-boton {
+    display: none;
+    color: #f2eadc;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+
+/* Navegación... Me rendí con lo de separar el header en 2 que te habia consultado, por varias razones, 
+1, no lo logré hacer solo, pregunte a la IA y me dio una opcion pero no me pude tomar el tiempo de desglosarlo, entenderlo y poder aplicarlo, entonces me rendi nomas, 
+2, el tema de tiempo tiene que ver con que el sabado me desayuné un mail de que me echaron, **no estoy farmeando lastima** , solo comentandote que estoy en modo
+tirar CV a 3 manos, asi que no pude dedicarme TODO el finde a dejar esto hermoso como habría querido, igual si querés tenerme lástima no la voy a rechazar JAJAJAJ. */
 nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
     list-style: none;
-    padding: 1rem;
 }
-
 nav a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.7rem 1rem;
+    color: #f2eadc;
+    font-size: 1rem;
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-weight: 800;
+    padding: 0.5rem 0.8rem; 
     border-radius: 0.4rem;
     transition: background-color 0.3s, color 0.3s;
 }
-
 nav a:hover {
-    background-color: #34495e;
-    color: #3498db;
+    background-color: #7a5738;
+    color: #f2eadc;
+    text-decoration: underline;
 }
+/* Header "responsive" con menú hamburguesa, no es gran cosa pero me molestaba MUCHO  que queden uno arriba del otro y ocupen media pantalla al hacer un poco de zoom.
+ya aplicaré esto al resto del sitio, por ahora es lo que hay */
+@media screen and (max-width: 48rem) {
+    .nombre{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
 
-/* Contenido general */
-main {
-    width: min(90%, 75rem);
-    margin: auto;
-    padding: 2rem 0;
-    background-color: white;
-}
+    .menu-boton {
+        display: block;
+    }
 
-section {
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
+    nav {
+        display: none;
+    }
 
-section h2 {
-    color: #2c3e50;
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    text-align: center;
-    margin-bottom: 1.5rem;
-    border-bottom: 0.2rem solid #3498db;
-    padding-bottom: 0.7rem;
-}
+    .menu-toggle:checked + .menu-boton + nav {
+        display: block;
+    }
 
-section h3 {
-    color: #34495e;
-    font-size: 1.4rem;
-    margin: 1.5rem 0 1rem;
-    border-left: 0.3rem solid #3498db;
-    padding-left: 1rem;
-}
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.8rem;
+    }
 
-p {
-    
-    margin-bottom: 1rem;
-    
-    font-size: 1.05rem;
-}
-
-ul {
-    margin: 1rem 0;
-    
-    padding-left: 2rem;
-}
-
-li {
-    margin-bottom: 0.5rem;
-}
-
-/* Artículos */
-article {
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    background-color: #fafafa;
-    border-left: 0.3rem solid #e74c3c;
-    border-radius: 0.5rem;
+    nav a {
+        display: block;
+        padding: 0.6rem 1rem;
+    }
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #2f2b24;
+    color: #f2eadc;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
     text-align: center;
-    padding: 2rem;
 }
 
 footer p {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Responsive simple */
-@media screen and (max-width: 48rem) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section {
-        padding: 1.2rem;
-    }
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
 }

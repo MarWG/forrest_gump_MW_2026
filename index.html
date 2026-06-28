@@ -5,81 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forrest Gump - Inicio</title>
     <link rel="icon" type="image/png" href="media/imagenes/favicon.png">
-    <link rel="stylesheet" href="css/styles.css">    
-        
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/home.css" >
 </head>
+
 <body>
 <header>
-    <h1>Forrest Gump</h1>
-    <nav class="menufijo">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pelicula.html">Película</a></li>
-            <li><a href="reparto.html">Reparto</a></li>
-            <li><a href="produccion.html">Producción</a></li>
-            <li><a href="curiosidades.html">Curiosidades y Premios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="header-contenedor">
+        <a href="index.html" class="nombre">Forrest Gump</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle"> 
+                
+        <label for="menu-toggle" class="menu-boton">☰</label>
+        <!--queria mover el cosito de hamburguesa a la izquierda pero no me dio el tiempo, para el final arreglo esto y hago el menu hamburguesa mas coqueto, pero por ahora tenia que enfocarme en entregar a tiempo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pelicula.html">Película</a></li>
+                <li><a href="reparto.html">Reparto</a></li>
+                <li><a href="produccion.html">Producción</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
-    <section class="hero">
-        <article>
-            <div class="hero-texto">
-                <h2>Bienvenidos al mundo de Forrest Gump</h2>
-                <h3>Una historia extraordinaria de un hombre ordinario</h3>
-                <p>
-                    Forrest Gump es una película dramática estadounidense de 1994 que narra la increíble vida
-                    de un hombre sencillo que, sin proponérselo, se convierte en testigo de algunos de los eventos
-                    más importantes de la historia estadounidense del siglo XX.
+    <section class="portada">
+        <div class="contenedor portada-contenido">
+            <article class="portada-texto">
+                <h1 class="tituloPrincipal">Bienvenidos al mundo de Forrest Gump</h1>
+
+                <h2 class="tituloSeccion">Una historia extraordinaria de un hombre ordinario</h2>
+
+                <p class="texto-largo textoJustificado">
+                    Forrest Gump es una película dramática estadounidense de 1994 que narra la vida de un hombre de Alabama
+                     con un coeficiente intelectual bajo pero de gran corazón. Guiado por las lecciones de su madre, 
+                     Forrest presencia y sin querer protagoniza algunos de los eventos históricos más importantes del siglo XX, 
+                     mientras anhela reencontrarse con Jenny, su gran amor de la infancia.
                 </p>
-                <p><strong>Género:</strong> Drama, comedia dramática y romance</p>
-                <p><strong>Año:</strong> 1994</p>
-                <p><strong>Director:</strong> Robert Zemeckis</p>
-            </div>
-            <figure class="hero-imagen">
-                <img src="imagenes/forrest-gump-poster.jpg" alt="Poster oficial de Forrest Gump">
-                <figcaption>Poster oficial de la película</figcaption>
+
+                <p><strong><br>Género:</strong> Drama, comedia dramática y romance</p>
+                <p><strong><br>Año:</strong> 1994</p>
+                <p><strong><br>Director:</strong> Robert Zemeckis</p>
+            </article>
+
+            <figure class="portada-imagen">
+                <img src="media/imagenes/forrest-gump-poster.jpg" alt="Póster oficial de Forrest Gump">
+                <figcaption>Póster oficial de la película</figcaption>
             </figure>
-        </article>
+        </div>
     </section>
 
     <section class="accesos">
-        <h2>Explorá el sitio</h2>
-        <div class="tarjetas">
-            <article>
-                <h3>  Película</h3>
-                <p>Conocé la sinopsis, el contexto y el impacto cinematográfico de Forrest Gump.</p>
-                <a href="pelicula.html">Ver sección</a>
-            </article>
-            <article>
-                <h3>Reparto</h3>
-                <p>Descubrí los personajes principales y los actores que dieron vida a la historia.</p>
-                <a href="reparto.html">Ver sección</a>
-            </article>
-            <article>
-                <h3>Producción</h3>
-                <p>Información sobre el estudio, el rodaje, locaciones y efectos especiales.</p>
-                <a href="produccion.html">Ver sección</a>
-            </article>
-            <article>
-                <h3>Curiosidades y Premios</h3>
-                <p>Anécdotas, reconocimientos, premios Oscar e impacto cultural de la película.</p>
-                <a href="curiosidades.html">Ver sección</a>
-            </article>
-            <article>
-                <h3>Contacto</h3>
-                <p>Envianos tus comentarios mediante el formulario de contacto del sitio.</p>
-                <a href="contacto.html">Ver sección</a>
-            </article>
+        <div class="contenedor">
+            <h2 class="tituloSeccion">Explorá el sitio</h2>
+
+            <div class="tarjetas">
+                <article>
+                    <h3>Película</h3>
+                    <p>Conocé la sinopsis, el contexto y el impacto cinematográfico de Forrest Gump.</p>
+                    <a href="pelicula.html">Ver sección</a>
+                </article>
+
+                <article>
+                    <h3>Reparto</h3>
+                    <p>Descubrí los personajes principales y los actores que dieron vida a la historia.</p>
+                    <a href="reparto.html">Ver sección</a>
+                </article>
+
+                <article>
+                    <h3>Producción</h3>
+                    <p>Información sobre el estudio, el rodaje, locaciones y efectos especiales.</p>
+                    <a href="produccion.html">Ver sección</a>
+                </article>
+
+                <article>
+                    <h3>Curiosidades y Premios</h3>
+                    <p>Anécdotas, reconocimientos, premios Oscar e impacto cultural de la película.</p>
+                    <a href="curiosidades.html">Ver sección</a>
+                </article>
+
+                <article>
+                    <h3>Contacto</h3>
+                    <p>Envianos tus comentarios mediante el formulario de contacto del sitio.</p>
+                    <a href="contacto.html">Ver sección</a>
+                </article>
+            </div>
         </div>
     </section>
 </main>
-
 <footer>
-    <p>&copy; 2026 Forrest Gump - Mariano Williams - Parcial 2 Programación Web 1.</p>
+    <p> Forrest Gump - Mariano Williams - Parcial 2 Programación Web 1.</p>
     <p>"La vida es como una caja de bombones, nunca sabes lo que te va a tocar"</p>
 </footer>
 

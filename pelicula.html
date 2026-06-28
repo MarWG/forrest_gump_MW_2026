@@ -1,24 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelicula</title>
+    <title>Película - Forrest Gump</title>
     <link rel="icon" href="media/imagenes/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
+
 <body>
+    <header>
+        <div class="header-contenedor">
+            <a href="index.html" class="nombre">Forrest Gump</a>
 
-<main>
-    <section>
-        <h2>Película</h2>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton">☰</label>
 
-        <!-- Acá se mueve TODO el contenido que hoy está en:
-        <section id="sobre-pelicula"> ... </section>
-        -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pelicula.html">Película</a></li>
+                    <li><a href="reparto.html">Reparto</a></li>
+                    <li><a href="produccion.html">Producción</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <!-- También acá debe agregarse el audio o iframe pedido en la consigna -->
-    </section>
-</main>
+    <main>
+        <section class="pagina-interna">
+            <div class="contenedor">
+                <h1 class="tituloPrincipal">Sobre la película</h1>
 
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">Sinopsis</h2>
+
+                    <p class="texto-largo textoJustificado">
+                        Forrest Gump cuenta la vida de un hombre sencillo, honesto y de gran corazón, que atraviesa
+                        distintos momentos importantes de la historia estadounidense casi sin proponérselo. A lo largo
+                        de la película, Forrest se relaciona con personajes que marcan su vida, especialmente su madre,
+                        su amigo Bubba, el teniente Dan y Jenny.
+                    </p>
+
+                    <p class="texto-largo textoJustificado">
+                        La historia mezcla drama, humor y romance, mostrando cómo una persona aparentemente común
+                        puede influir en el mundo que la rodea sin buscar fama ni reconocimiento.
+                    </p>
+                </article>
+
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">Contexto e impacto</h2>
+
+                    <p class="texto-largo textoJustificado">
+                        La película recorre varias décadas del siglo XX y utiliza la vida de Forrest como hilo conductor.
+                        A través de sus experiencias aparecen temas como la guerra, la amistad, la familia, el amor,
+                        la pérdida y la búsqueda de un lugar propio en el mundo.
+                    </p>
+
+                    <p class="texto-largo textoJustificado">
+                        Su mezcla de historia personal con acontecimientos sociales ayudó a que la película quedara
+                        instalada como una obra muy reconocida dentro de la cultura popular.
+                    </p>
+                </article>
+
+                <article class="bloque-pagina">
+                    <h2 class="tituloSeccion">Trailer</h2>
+
+                    <p class="texto-largo textoJustificado">
+                        <em>Como material multimedia, se incluye el trailer de la película para acompañar el contenido
+                        textual de esta sección.</em>
+                    </p>
+
+                    <figure class="video-pelicula">
+                        <iframe src="https://www.youtube.com/embed/bLvqoHBptjg?si=X9S2nrfZeHVzD0ck"
+                            title="Trailer de Forrest Gump"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+
+                        <figcaption> <em>Trailer de youtube .</em></figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Forrest Gump - Mariano Williams - Parcial 2 Programación Web 1.</p>
+            <p>"La vida es como una caja de bombones, nunca sabes lo que te va a tocar"</p>
+        </div>
+    </footer>
 </body>
 </html>
