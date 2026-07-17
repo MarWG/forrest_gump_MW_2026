@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/pages.css">
@@ -40,81 +42,201 @@
             <div class="contenedor">
                 <h1 class="tituloPrincipal">Reparto principal</h1>
 
-                <article class="bloque-pagina">
-                   <h2 class="tituloSeccion">
-                     <a href="https://es.wikipedia.org/wiki/Tom_Hanks" target="_blank"> 
-                        Tom Hanks </a> como Forrest Gump
-                        <!-- tuve que googlear como abrirlo en una nueva pestaña porque me re molestaba que lo abra en la misma ventana... 
-                        IMO deberia ser castigable de manera legal que un enlace se te abra en la misma pagina siempre que sea a otro sitio xD --> 
+                <article class="bloque-pagina tarjeta-reparto">
 
-                       <!-- Y si esto lo vimos en clase .. 
-                       En las diapositivas habla de target para misma ventana, otra ventana o iframe dentro del sitio :P -->
+                    <figure class="imagen-reparto">
+                        <img src="media/imagenes/reparto/forrest.jpg" alt="Forrest Gump interpretado por Tom Hanks">
+                    </figure>
 
-                       <!--que lo haya tenido que googlear no dice nada malo de la clase, probablemente de mi si, pero bueno jajajaj, che que máquina. Te agregué al repositorio y ni una hora despues ya estabas corrigiendo. Gracias!! y AGUANTE MESSI-->
-                    </h2>
-                    <p class="texto-largo textoJustificado">
-                        Tom Hanks interpreta a Forrest, el protagonista de la historia. Su personaje se caracteriza
-                        por su sinceridad, su forma simple de ver el mundo y su capacidad de atravesar situaciones
-                        importantes sin perder su manera de ser.
-                    </p>
+                    <div class="info-reparto">
+                        <h2 class="tituloSeccion">
+                            <a href="https://es.wikipedia.org/wiki/Tom_Hanks" target="_blank">
+                                Tom Hanks
+                            </a>
+                            como Forrest Gump
+                        </h2>
+
+                        <input type="checkbox" id="ver-forrest" class="ver-mas-control">
+                        <p class="texto-largo textoJustificado texto-extra">
+                            Tom Hanks interpreta a Forrest, el protagonista de la historia. Su personaje se caracteriza
+                            por su sinceridad, su forma simple de ver el mundo y su capacidad de atravesar situaciones
+                            importantes sin perder su manera de ser.
+                            A lo largo de la película, Forrest participa de acontecimientos históricos, sirve en el
+                            ejército,
+                            practica tenis de mesa, crea una empresa de camarones y recorre Estados Unidos corriendo.
+                            Aunque logra reconocimiento y éxito económico, sus decisiones continúan guiadas
+                            principalmente
+                            por su lealtad hacia las personas que quiere, especialmente Jenny, su madre, Bubba y el
+                            teniente Dan.
+                        </p>
+
+                        <label for="ver-forrest" class="ver-mas-boton">
+                            <span class="texto-ver-mas">Ver más</span>
+                            <span class="texto-ver-menos">Ver menos</span>
+                        </label>
+                    </div>
+
                 </article>
 
-                <article class="bloque-pagina">
-                    <h2 class="tituloSeccion">
-                    <a href="https://es.wikipedia.org/wiki/Robin_Wright" target="_blank">
-                    Robin Wright
-                    </a> como <em>Jenny</em> <!--si, ya sabes por qué está en italics esto, y si no lo leiste como corresponde en tu mente, mal ahi, toca rewatch de Forres Gump-->
-                    </h2>
-                    <p class="texto-largo textoJustificado">
-                        Jenny es una de las personas más importantes en la vida de Forrest. Su historia muestra un
-                        recorrido mucho más conflictivo, marcado por búsquedas personales, decisiones difíciles y una
-                        relación constante pero compleja con el protagonista.
-                    </p>
+                <article class="bloque-pagina tarjeta-reparto">
+
+                    <figure class="imagen-reparto">
+                        <img src="media/imagenes/reparto/jenny.jpg" alt="Jenny Curran interpretada por Robin Wright">
+                    </figure>
+
+                    <div class="info-reparto">
+                        <h2 class="tituloSeccion">
+                            <a href="https://es.wikipedia.org/wiki/Robin_Wright" target="_blank">
+                                Robin Wright
+                            </a>
+                            como Jenny Curran
+                        </h2>
+
+                        <input type="checkbox" id="ver-jenny" class="ver-mas-control">
+
+                        <p class="texto-largo textoJustificado texto-extra">
+                            Jenny es una de las personas más importantes en la vida de Forrest. Ambos se conocen durante
+                            la infancia y desarrollan un vínculo que se mantiene a lo largo de los años, aunque sus
+                            caminos
+                            sean muy diferentes. Mientras Forrest conserva una mirada sencilla y estable, Jenny
+                            atraviesa
+                            una vida marcada por una infancia difícil, relaciones conflictivas y la búsqueda constante
+                            de
+                            libertad. Durante distintos momentos intenta construir una carrera como cantante y forma
+                            parte
+                            de los movimientos culturales de las décadas de 1960 y 1970. A pesar de sus separaciones,
+                            Forrest continúa queriéndola y esperando volver a encontrarse con ella.
+                        </p>
+
+                        <label for="ver-jenny" class="ver-mas-boton">
+                            <span class="texto-ver-mas">Ver más</span>
+                            <span class="texto-ver-menos">Ver menos</span>
+                        </label>
+                    </div>
+
                 </article>
 
-                <article class="bloque-pagina">
-                    <h2 class="tituloSeccion">
-                    <a href="https://es.wikipedia.org/wiki/Gary_Sinise" target="_blank">
-                    Gary Sinise
-                    </a> como el teniente Dan
-                    </h2>
-                    <p class="texto-largo textoJustificado">
-                        El teniente Dan aparece primero como superior de Forrest durante la guerra. A lo largo de la
-                        película, su personaje atraviesa una transformación importante, especialmente en su manera de
-                        entender la vida después del conflicto bélico.
-                    </p>
+                <article class="bloque-pagina tarjeta-reparto">
+
+                    <figure class="imagen-reparto">
+                        <img src="media/imagenes/reparto/teniente-dan.jpg"
+                            alt="Teniente Dan interpretado por Gary Sinise">
+                    </figure>
+
+                    <div class="info-reparto">
+                        <h2 class="tituloSeccion">
+                            <a href="https://es.wikipedia.org/wiki/Gary_Sinise" target="_blank">
+                                Gary Sinise
+                            </a>
+                            como el teniente Dan
+                        </h2>
+
+                        <input type="checkbox" id="ver-dan" class="ver-mas-control">
+
+                        <p class="texto-largo textoJustificado texto-extra">
+                            El teniente Dan es el superior de Forrest y Bubba durante la guerra de Vietnam. Proviene de
+                            una
+                            familia cuyos integrantes murieron combatiendo en distintas guerras, por lo que él considera
+                            que
+                            ese también debería ser su destino. Cuando Forrest lo rescata durante un ataque, Dan
+                            sobrevive
+                            pero pierde ambas piernas, situación que lo lleva a atravesar una etapa de enojo,
+                            frustración y
+                            pérdida de propósito. Con el tiempo vuelve a encontrarse con Forrest y se une al negocio de
+                            camarones que habían imaginado junto a Bubba. Su recorrido muestra una de las
+                            transformaciones
+                            más importantes de la película, ya que finalmente logra reconciliarse con su vida y
+                            encontrar
+                            una nueva dirección.
+                        </p>
+
+                        <label for="ver-dan" class="ver-mas-boton">
+                            <span class="texto-ver-mas">Ver más</span>
+                            <span class="texto-ver-menos">Ver menos</span>
+                        </label>
+                    </div>
                 </article>
 
-                <article class="bloque-pagina">
-                    <h2 class="tituloSeccion">
-                    <a href="https://es.wikipedia.org/wiki/Mykelti_Williamson" target="_blank">
-                    Mykelti Williamson
-                    </a> como Bubba
-                    </h2>
-                    <p class="texto-largo textoJustificado">
-                        Bubba es uno de los grandes amigos de Forrest. Su vínculo nace durante el servicio militar y
-                        está muy relacionado con el sueño de crear un negocio de camarones, idea que luego tendrá un
-                        peso importante en la vida del protagonista.
-                    </p>
+                <article class="bloque-pagina tarjeta-reparto">
+
+                    <figure class="imagen-reparto">
+                        <img src="media/imagenes/reparto/bubba.jpg" alt="Bubba interpretado por Mykelti Williamson">
+                    </figure>
+
+                    <div class="info-reparto">
+                        <h2 class="tituloSeccion">
+                            <a href="https://es.wikipedia.org/wiki/Mykelti_Williamson" target="_blank">
+                                Mykelti Williamson
+                            </a>
+                            como Bubba
+                        </h2>
+
+                        <input type="checkbox" id="ver-bubba" class="ver-mas-control">
+
+                        <p class="texto-largo textoJustificado texto-extra">
+                            Bubba conoce a Forrest durante el entrenamiento militar y rápidamente se convierte en uno de
+                            sus
+                            mejores amigos. Proviene de una familia que trabajó durante generaciones cocinando y
+                            sirviendo
+                            camarones, por lo que conoce una enorme cantidad de formas de prepararlos. Su gran sueño es
+                            comprar un barco y crear un negocio dedicado a la pesca de camarones junto a Forrest cuando
+                            termine la guerra. Aunque Bubba muere durante un ataque en Vietnam, Forrest decide cumplir
+                            la
+                            promesa que le había hecho y funda la empresa Bubba Gump Shrimp. Más adelante comparte parte
+                            de
+                            las ganancias con la familia de su amigo, manteniendo vivo su recuerdo y demostrando la
+                            lealtad
+                            que caracteriza al protagonista.
+                        </p>
+
+                        <label for="ver-bubba" class="ver-mas-boton">
+                            <span class="texto-ver-mas">Ver más</span>
+                            <span class="texto-ver-menos">Ver menos</span>
+                        </label>
+                    </div>
+
                 </article>
 
-                <article class="bloque-pagina">
-                    <h2 class="tituloSeccion">
-                    <a href="https://es.wikipedia.org/wiki/Sally_Field" target="_blank">
-                    Sally Field
-                    </a> como la madre de Forrest
-                    </h2>
-                    <p class="texto-largo textoJustificado">
-                        La madre de Forrest cumple un papel fundamental en su formación. A través de sus consejos y
-                        de su manera de protegerlo, le transmite muchas de las frases y valores que acompañan al
-                        personaje durante toda la película.
-                    </p>
+                <article class="bloque-pagina tarjeta-reparto">
 
-                    <!-- 2 aclaraciones en esta pagina: 
-                     1>> todos los textos de descripción de cada personaje son 100% chatgpt, si me pongo yo a escribir cada una, por un lado tardaria un par de horas, y por otro lado serían tarjetas LARGUISIMAS, porque meteria mis opiniones y bla bla.
-                     ya te mencioné que es mi película favorita? bueno, eso... 
-                     2>> para el final los voy a hacer en GRID tambien y cada uno va a tener la foto de la cara del actor, pero ahora no me dio el tiempo, no es por vagancia. O si...
-                     -->
+                    <figure class="imagen-reparto">
+                        <img src="media/imagenes/reparto/madre-forrest.jpg"
+                            alt="Madre de Forrest interpretada por Sally Field">
+                    </figure>
+
+                    <div class="info-reparto">
+                        <h2 class="tituloSeccion">
+                            <a href="https://es.wikipedia.org/wiki/Sally_Field" target="_blank">
+                                Sally Field
+                            </a>
+                            como la madre de Forrest
+                        </h2>
+
+                        <input type="checkbox" id="ver-madre" class="ver-mas-control">
+
+                        <p class="texto-largo textoJustificado texto-extra">
+                            La madre de Forrest es la figura más importante durante sus primeros años de vida. Desde
+                            pequeño
+                            le enseña que no debe permitir que otras personas lo consideren inferior y lucha para que
+                            pueda
+                            acceder a las mismas oportunidades educativas que los demás niños. Muchas de las frases que
+                            Forrest repite durante la película provienen de las enseñanzas de su madre, quien suele
+                            explicar
+                            situaciones complejas mediante comparaciones sencillas. Su manera de educarlo influye
+                            directamente
+                            en la honestidad, la perseverancia y la forma positiva con la que Forrest enfrenta cada
+                            etapa de
+                            su vida. Incluso cuando se acerca el final de su vida, continúa transmitiéndole calma y
+                            ayudándolo
+                            a comprender que la muerte también forma parte del recorrido de cada persona.
+                        </p>
+
+                        <label for="ver-madre" class="ver-mas-boton">
+                            <span class="texto-ver-mas">Ver más</span>
+                            <span class="texto-ver-menos">Ver menos</span>
+                        </label>
+                    </div>
+
                 </article>
             </div>
         </section>
@@ -127,4 +249,5 @@
         </div>
     </footer>
 </body>
+
 </html>

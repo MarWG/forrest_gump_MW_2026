@@ -36,7 +36,7 @@
     padding: 0.7rem;
     border: 0.1rem solid #d8c7a3;
     background-color: #fdf8ee;
-    font-family: Georgia, Garamond, serif;
+    font-family: inherit;
     font-size: 1rem;
     border-radius: 0.4rem;
 }
@@ -58,8 +58,8 @@
     color: #f2eadc;
     border: none;
     padding: 0.8rem 1.2rem;
-    font-family: "Bodoni Moda", Georgia, serif;
-    font-weight: 800;
+    font-family: inherit;
+    font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;

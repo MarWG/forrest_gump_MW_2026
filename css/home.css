@@ -21,6 +21,11 @@
     border-radius: 0.4rem;
 }
 
+.portada-imagen img {
+    display: block;
+    width: 100%;
+}
+
 .portada-texto {
     background-color: rgba(255, 255, 255, 0.35);
     padding: 1.5rem;
@@ -79,7 +84,103 @@
     font-weight: bold;
 }
 
-/* Responsive del home, Y LISTO, el resto va sin, desde ya aviso y el que avisa no traiciona :P */
+/*RESPONSIVE NUEVO(Tablet) 677px - 1024px */
+@media screen and (max-width: 1023px) {
+    .portada {
+        padding: 2.5rem 0;
+    }
+
+    .portada-contenido {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .portada-imagen {
+        max-width: 30rem;
+    }
+
+    .portada-texto {
+        padding: 1.3rem;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjetas article:last-child {
+        grid-column: 1 / -1;
+    } /*esto es GOD, será una re boludez seguro, pero no me gustaba como quedaban 2, 2 y 1 sola , y era más fácil hacer esto que centrar esa sola jajajaj */
+}
+
+/* RESPONSIVE NUEVO(Móvil):  hasat 676px */
+@media screen and (max-width: 676px) {
+    .portada {
+        padding: 1.5rem 0;
+    }
+
+    .portada-contenido {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .portada-imagen {
+        order: 1;
+        width: 100%;
+        max-width: 24rem;
+    }
+
+    .portada-texto {
+        order: 2;
+        padding: 1.1rem;
+    }
+
+    .portada-imagen figcaption {
+        font-size: 0.85rem;
+    }
+
+    .accesos {
+        padding: 1.5rem 0 2rem;
+    }
+
+    .accesos h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .tarjetas article {
+        padding: 1.1rem;
+    }
+
+    .tarjetas article:last-child {
+        grid-column: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE VIEJO, dnu ===> Responsive del home, Y LISTO, el resto va sin, desde ya aviso y el que avisa no traiciona :P 
 @media screen and (max-width: 48rem) {
     .portada {
         padding: 2rem 0;
@@ -98,8 +199,10 @@
         max-width: 28rem;
         border-radius: 0.4rem;
     }
-
+    
+    
     .tarjetas {
         grid-template-columns: 1fr;
     }
 }
+    */
