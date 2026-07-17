@@ -15,7 +15,7 @@
 
 .caja-contacto p {
     margin-bottom: 1.5rem;
-    
+
 }
 
 .campo-formulario {
@@ -33,6 +33,7 @@
 .campo-formulario input,
 .campo-formulario textarea {
     width: 100%;
+    max-width: 100%;
     padding: 0.7rem;
     border: 0.1rem solid #d8c7a3;
     background-color: #fdf8ee;
@@ -105,4 +106,68 @@
     color: #f2eadc;
     text-decoration: none;
     transform: translateY(-0.2rem);
+}
+
+/*RESPONSIVE, para tablet */
+@media screen and (max-width: 1023px) {
+
+    .contacto,
+    .confirmacion {
+        padding: 2.2rem 0;
+    }
+
+    .caja-contacto,
+    .mensaje-confirmacion {
+        max-width: 40rem;
+        padding: 1.5rem;
+    }
+}
+
+/*RESPONSIVE para tamaño movil, basicamente haciendo que los botones, cajas, divs, y TODO sea más facil de cliquear, probá, el botón de "enviar mensaje" funciona aunque lo cliquees ligeramente fuera del boton jajajaj, no se si eso es pasarse, ya me dirás.*/
+@media screen and (max-width: 676px) {
+
+    .contacto,
+    .confirmacion {
+        padding: 1.5rem 0;
+    }
+
+    .caja-contacto,
+    .mensaje-confirmacion {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
+        border-left-width: 0.25rem;
+        overflow-wrap: break-word;
+    }
+
+    .caja-contacto p {
+        margin-bottom: 1.2rem;
+    }
+
+    .campo-formulario {
+        margin-bottom: 0.9rem;
+    }
+
+    .campo-formulario input,
+    .campo-formulario textarea {
+        padding: 0.65rem;
+        font-size: 1rem;
+    }
+
+    .campo-formulario textarea {
+        min-height: 7rem;
+    }
+
+    .boton-enviar {
+        display: block;
+        width: 100%;
+        padding: 0.8rem 1rem;
+        text-align: center;
+    }
+
+    .boton-volver {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }

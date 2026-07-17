@@ -1,7 +1,7 @@
 /* Portada de inicio */
 .portada {
     padding: 3rem 0;
-    
+
 }
 
 .portada-contenido {
@@ -38,8 +38,9 @@
     font-style: italic;
     font-size: 1rem;
     margin-top: 0.4rem;
-    
+
 }
+
 /* secciones en modo tarjetas. EEEEEEE, mirá como uso la GRID PAPAAAA. jajaja Para algo al menos, no me da para hacer asi el resto del sitio. Pero me gustó dividir asi las cosas cuando vimos el tema en diseño y como nos enseñaste a usar GRID queria usarlo para algo */
 .accesos {
     padding: 2rem 0 3rem;
@@ -54,7 +55,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    
+
 }
 
 .tarjetas article {
@@ -66,7 +67,8 @@
     border-radius: 0.4rem;
 }
 
-.tarjetas article:hover { /*si, ya se, es el efecto de hover más básico que hay, pero quedó lindo */
+.tarjetas article:hover {
+    /*si, ya se, es el efecto de hover más básico que hay, pero quedó lindo */
     transform: translateY(-0.3rem);
     box-shadow: 0 0.4rem 0.9rem #2f2b2440;
 }
@@ -109,7 +111,9 @@
 
     .tarjetas article:last-child {
         grid-column: 1 / -1;
-    } /*esto es GOD, será una re boludez seguro, pero no me gustaba como quedaban 2, 2 y 1 sola , y era más fácil hacer esto que centrar esa sola jajajaj */
+    }
+
+    /*esto es GOD, será una re boludez seguro, pero no me gustaba como quedaban 2, 2 y 1 sola , y era más fácil hacer esto que centrar esa sola jajajaj */
 }
 
 /* RESPONSIVE NUEVO(Móvil):  hasat 676px */

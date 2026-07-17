@@ -3,6 +3,22 @@
     padding: 3rem 0;
 }
 
+/* separando el tema en columnas pero para solo pantallas grandes :D */
+.pagina-columnas .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.pagina-columnas .tituloPrincipal {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+}
+
+.bloque-ancho {
+    grid-column: 1 / -1;
+}
+
 .pagina-interna .tituloPrincipal {
     margin-bottom: 2rem;
 }
@@ -14,11 +30,14 @@
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 0.2rem 0.6rem #2f2b2426;
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 .bloque-pagina p {
     margin-bottom: 1rem;
 }
+
 /* config de las fotos dentro de las tarjetas en REPARTO */
 .tarjeta-reparto {
     display: grid;
@@ -41,7 +60,7 @@
     box-shadow: 0 0.2rem 0.6rem #2f2b2440;
 }
 
-.info-reparto  {
+.info-reparto {
     min-width: 0;
 }
 
@@ -53,13 +72,50 @@
 
 /* Tablet:  677px - 1024px */
 @media screen and (max-width: 1023px) {
+    .pagina-interna {
+        padding: 2.2rem 0;
+    }
+
+    .pagina-columnas .contenedor {
+        gap: 1.2rem;
+    }
+
+    .bloque-pagina {
+        padding: 1.25rem;
+    }
+
     .tarjeta-reparto {
         grid-template-columns: 11rem minmax(0, 1fr);
         gap: 1.2rem;
     }
+
 }
+
 /* Móvil: hasta 676px */
 @media screen and (max-width: 676px) {
+    .pagina-interna {
+        padding: 1.5rem 0;
+    }
+
+    .pagina-columnas .contenedor {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .pagina-columnas .tituloPrincipal,
+    .bloque-ancho {
+        grid-column: auto;
+    }
+
+    .bloque-pagina {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .video-pelicula {
+        margin-top: 1rem;
+    }
+
     .tarjeta-reparto {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -70,47 +126,50 @@
         max-width: 18rem;
         margin: 0 auto;
     }
+
     .info-reparto .tituloSeccion {
-    text-align: left;
-}
+        text-align: left;
+    }
+
     .info-reparto {
         text-align: justify;
-         /*no me gusta nada como quedaron las tarjetas con el texto justificado en la version movil,
+        /*no me gusta nada como quedaron las tarjetas con el texto justificado en la version movil,
          pero probé izq, derecha, center, y todas quedan medio feas la verdad, asi que la elegí la que a pesar de no quedar "genial" 
          al menos es "standard" */
     }
+
     .texto-extra {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
-    overflow: hidden;
-}
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        overflow: hidden;
+    }
 
-.ver-mas-boton {
-    display: inline-block;
-    margin-top: 0.7rem;
-    color: #7a5738;
-    font-weight: 700;
-    cursor: pointer;
-    text-decoration: underline;
-}
+    .ver-mas-boton {
+        display: inline-block;
+        margin-top: 0.7rem;
+        color: #7a5738;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 
-.texto-ver-menos {
-    display: none;
-}
+    .texto-ver-menos {
+        display: none;
+    }
 
-.ver-mas-control:checked + .texto-extra {
-    display: block;
-}
+    .ver-mas-control:checked+.texto-extra {
+        display: block;
+    }
 
-.ver-mas-control:checked ~ .ver-mas-boton .texto-ver-mas {
-    display: none;
-}
+    .ver-mas-control:checked~.ver-mas-boton .texto-ver-mas {
+        display: none;
+    }
 
-.ver-mas-control:checked ~ .ver-mas-boton .texto-ver-menos {
-    display: inline;
-}
+    .ver-mas-control:checked~.ver-mas-boton .texto-ver-menos {
+        display: inline;
+    }
 }
 
 
@@ -123,14 +182,18 @@
 /*manejo del videito que puse en "Película", que ocupe todo el ancho de la tarjeta, */
 
 .video-pelicula {
+    width: 100%;
     margin-top: 1.5rem;
 }
 
 .video-pelicula iframe {
+    display: block;
     width: 100%;
+    max-width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
     box-shadow: 0 0.3rem 0.8rem #2f2b2440;
+
 }
 
 .video-pelicula figcaption {
